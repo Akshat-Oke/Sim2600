@@ -1,2 +1,2 @@
 #!/bin/bash
-python mainSim.py
+python2 mainSim.py

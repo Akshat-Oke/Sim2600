@@ -42,3 +42,10 @@ class NmosFet:
                self.gateWireIndex, self.size1WireIndex, self.side2WireIndex)
         return rstr
 
+    @staticmethod
+    def writeFetData(fpath, tlist):
+        f = open(fpath, "a");
+        for t in tlist:
+            f.write("%d %d %d %d\n" % (t.index, t.side1WireIndex, t.side2WireIndex, t.gateWireIndex))
+        f.close()
+
